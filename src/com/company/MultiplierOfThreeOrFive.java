@@ -6,7 +6,7 @@ package com.company;
  */
 public class MultiplierOfThreeOrFive {
 
-    public int limit = 0;
+    public int limit;
 
     public MultiplierOfThreeOrFive(int limit) {
         System.out.println("constructor");
