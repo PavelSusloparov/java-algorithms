@@ -18,14 +18,12 @@ public class MultiplierOfThreeOrFive {
 
     public void run() {
         System.out.println("run");
-        java.util.List<Integer> list = java.util.stream.IntStream.rangeClosed(0, this.limit).boxed().collect(java.util.stream.Collectors.toList());
+        java.util.List<Integer> list = java.util.stream.IntStream.rangeClosed(1, this.limit - 1).boxed().collect(java.util.stream.Collectors.toList());
         list.forEach((i) -> {
             System.out.println("Value " + i);
         });
         System.out.println("===");
         int sum = list.stream()
-                .skip(1)
-                .limit(this.limit - 1)
                 .filter((i) -> (i % 3 == 0) || (i % 5 == 0))
                 .peek((i) -> System.out.println("Value " + i))
                 .mapToInt(Integer::intValue).sum();
