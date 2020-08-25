@@ -32,7 +32,10 @@ public class Main {
 //        PrimeNumberPeek primeNumberPeek = new PrimeNumberPeek();
 //        primeNumberPeek.run();
 
-        PolyndromWithSpecialCharacters polyndromWithSpecialCharacters = new PolyndromWithSpecialCharacters();
-        polyndromWithSpecialCharacters.run();
+//        PolyndromWithSpecialCharacters polyndromWithSpecialCharacters = new PolyndromWithSpecialCharacters();
+//        polyndromWithSpecialCharacters.run();
+
+        IslandProblem islandProblem = new IslandProblem();
+        islandProblem.run();
     }
 }
